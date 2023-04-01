@@ -6,7 +6,10 @@ h1 {
   font-size: 60px;
   color: rgb(207, 207, 235);
 }
-
+.git {
+  text-align: center;
+  display: block;
+}
 .info {
   text-align: center;
   font-size: 30px;
