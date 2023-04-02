@@ -16,7 +16,7 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
   let day = days[dayIndex];
 
@@ -43,7 +43,7 @@ function searchCity(city) {
 
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
 }
-searchCity("Pasadena");
+searchCity("Pasadena,MD,USA");
 
 function showTemperature(response) {
   const temperature = Math.round(response.data.main.temp);
