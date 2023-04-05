@@ -49,6 +49,13 @@ function showTemperature(response) {
   const h1 = document.querySelector("#city");
   const temperatureElement = document.querySelector("#temperature");
   const description = document.querySelector("#temperature-description");
+  const icon = response.data.condition.icon;
+  const displayIcon = document.querySelector("#icon");
+  displayIcon.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${icon}.png`
+  );
+
   h1.innerHTML = response.data.city;
   temperatureElement.innerHTML = `${temperature}°F`;
   description.innerHTML = response.data.condition.description;
