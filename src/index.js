@@ -42,7 +42,7 @@ function searchCity(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(showTemperature);
 }
-searchCity("Pasadena, Maryland, Usa");
+searchCity("Pasadena,Maryland,Usa");
 function showTemperature(response) {
   console.log(response);
   const temperature = Math.round(response.data.temperature.current);
