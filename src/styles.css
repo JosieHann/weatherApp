@@ -3,18 +3,14 @@ h1 {
   font-family: kanit;
   margin: 0%;
   margin-top: 20px;
-  font-size: 60px;
+  font-size: 50px;
   color: rgb(207, 207, 235);
 }
 .git {
   text-align: center;
   display: block;
 }
-.info {
-  text-align: center;
-  font-size: 30px;
-  font-family: kanit;
-}
+
 .snow {
   color: white;
   font-size: 50px;
@@ -32,21 +28,11 @@ h1 {
 }
 
 h2 {
-  font-family: kanit;
-  margin-bottom: 10px;
-  font-size: 30px;
-  color: rgb(207, 207, 235);
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.5;
 }
 
-li {
-  text-align: center;
-  display: block;
-  font-family: "Josefin Sans";
-  font-size: 20px;
-  margin-bottom: 5px;
-  color: rgb(207, 207, 235);
-  word-spacing: 10px;
-}
 footer {
   font-family: kanit;
   font-size: 24px;
