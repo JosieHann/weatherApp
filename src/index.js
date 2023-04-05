@@ -38,20 +38,18 @@ let searchform = document.querySelector("#search-form");
 searchform.addEventListener("submit", search);
 
 function searchCity(city) {
-  let apiKey = "38c802d775c3604b60d030d4f2e1e50c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial`;
-
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+  let apiKey = "2c133oabdb09a4tc70345f314f78b4fb";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(showTemperature);
 }
-searchCity("Pasadena,MD,USA");
-
+searchCity("Pasadena, Maryland, Usa");
 function showTemperature(response) {
-  const temperature = Math.round(response.data.main.temp);
+  console.log(response);
+  const temperature = Math.round(response.data.temperature.current);
   const h1 = document.querySelector("#city");
   const temperatureElement = document.querySelector("#temperature");
   const description = document.querySelector("#temperature-description");
-
-  h1.innerHTML = response.data.name;
+  h1.innerHTML = response.data.city;
   temperatureElement.innerHTML = `${temperature}°F`;
-  description.innerHTML = response.data.weather[0].description;
+  description.innerHTML = response.data.condition.description;
 }
