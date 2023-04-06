@@ -6,6 +6,11 @@ h1 {
   font-size: 50px;
   color: rgb(207, 207, 235);
 }
+p {
+  font-family: kanit;
+  font-size: 30px;
+  margin: 0;
+}
 .git {
   text-align: center;
   display: block;
@@ -31,6 +36,7 @@ h2 {
   text-align: center;
   font-size: 15px;
   opacity: 0.5;
+  margin: 0%;
 }
 
 footer {
