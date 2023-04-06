@@ -53,7 +53,7 @@ function showTemperature(response) {
   const displayIcon = document.querySelector("#icon");
   displayIcon.setAttribute(
     "src",
-    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${icon}.png`
+    `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${icon}.png`
   );
 
   h1.innerHTML = response.data.city;
