@@ -1,71 +1,95 @@
-h1 {
-  text-align: center;
+body {
   font-family: kanit;
-  margin: 0%;
-  margin-top: 20px;
-  font-size: 50px;
-  color: rgb(207, 207, 235);
+  margin-bottom: 0%;
 }
-p {
-  font-family: kanit;
-  font-size: 30px;
+
+h1 {
+  color: rgb(55, 138, 247);
+  font-size: 27px;
+  font-weight: 550;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+ul {
   margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+
+  color: rgb(136, 176, 230);
+  font-size: 19px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.weather-app-wrapper {
+  max-width: 450px;
+  margin: 20px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #61a1f3;
+  border-radius: 20px;
+}
+
+.overview {
+  margin-bottom: 0px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 70px;
+}
+
+.weather-temperature strong {
+  color: rgb(72, 145, 240);
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 10px;
+  color: #61a1f3;
+}
+
+.weather-temperature .active {
+  color: rgb(97, 154, 230);
+  cursor: pointer;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(79, 139, 218);
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 20px;
 }
 .git {
-  text-align: center;
-  display: block;
-}
-
-.snow {
-  color: white;
-  font-size: 50px;
-}
-.cloud {
-  color: white;
-  font-size: 50px;
-}
-.suncloud {
-  font-size: 50px;
-}
-.rain {
-  font-size: 50px;
-  color: blue;
-}
-
-h2 {
-  text-align: center;
-  font-size: 15px;
-  opacity: 0.5;
-  margin: 0%;
-}
-
-footer {
-  font-family: kanit;
-  font-size: 24px;
-  color: rgb(207, 207, 235);
-  margin-top: 5px;
-  word-spacing: 10px;
-}
-
-.form {
-  text-align: center;
-  margin-bottom: 30px;
   font-size: 20px;
-  margin-top: 20px;
-  color: rgb(207, 207, 235);
-  font-size: 20px;
-}
-.container {
-  border: 30px;
-  border-radius: 50px;
-  padding: 30px;
-  padding-top: 5px;
-  background: radial-gradient(
-    circle at 48.7% 44.3%,
-    rgb(30, 144, 231) 0%,
-    rgb(56, 113, 209) 22.9%,
-    rgb(39, 67, 192) 76.7%,
-    rgb(40, 29, 196) 100.2%
-  );
-  max-width: 900px;
+  color: rgb(73, 145, 240);
+  text-decoration: underline;
 }
