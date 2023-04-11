@@ -93,4 +93,5 @@ li:first-letter {
   font-size: 20px;
   color: rgb(73, 145, 240);
   text-decoration: underline;
+  text-align: center;
 }
