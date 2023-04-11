@@ -80,9 +80,10 @@ li:first-letter {
   color: rgb(79, 139, 218);
 }
 
+.weather-forecast-temperatures,
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .weather-forecast-temperatures {
