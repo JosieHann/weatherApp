@@ -4,11 +4,20 @@ body {
 }
 
 h1 {
-  color: rgb(55, 138, 247);
+  color: white;
   font-size: 27px;
   font-weight: 550;
   line-height: 28px;
   margin-bottom: 0;
+}
+h2 {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+.p {
+  font-size: 16px;
+  opacity: 0.8;
 }
 
 ul {
@@ -20,11 +29,11 @@ li {
   list-style: none;
   margin: 0%;
   padding: 0%;
-
-  color: rgb(136, 176, 230);
+  color: white;
   font-size: 19px;
   font-weight: 100;
   line-height: 19px;
+  opacity: 0.7;
 }
 
 li:first-letter {
@@ -32,14 +41,20 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
-  max-width: 450px;
+  max-width: 500px;
   margin: 20px auto;
+  border-radius: 16px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(59, 149, 237) 0%,
+    rgb(7, 91, 173) 90%
+  );
 }
 
 .weather-app {
   padding: 20px;
   border: 1px solid #61a1f3;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
 .overview {
@@ -53,7 +68,7 @@ li:first-letter {
 }
 
 .weather-temperature strong {
-  color: rgb(72, 145, 240);
+  color: white;
   font-size: 50px;
   line-height: 1;
   font-weight: 300;
@@ -62,11 +77,11 @@ li:first-letter {
 .weather-temperature .units {
   position: relative;
   font-size: 10px;
-  color: #61a1f3;
+  color: white;
 }
 
 .weather-temperature .active {
-  color: rgb(97, 154, 230);
+  color: white;
   cursor: pointer;
 }
 
@@ -75,23 +90,31 @@ li:first-letter {
 }
 
 .weather-forecast {
-  margin-top: 20px;
-  text-align: center;
-  color: rgb(79, 139, 218);
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
 }
-
-.weather-forecast-temperatures,
-.weather-forecast-date {
-  font-size: 16px;
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid;
   opacity: 0.7;
 }
-
-.weather-forecast-temperatures {
-  font-size: 20px;
+.day img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 5px;
 }
 .git {
   font-size: 20px;
   color: rgb(73, 145, 240);
   text-decoration: underline;
   text-align: center;
+  display: block;
 }
