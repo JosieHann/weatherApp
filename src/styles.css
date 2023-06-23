@@ -110,10 +110,9 @@ li:first-letter {
   text-align: center;
   display: block;
 }
-@media(max-width:400px) {
+@media(max-width:300px) {
   .weather-app-wrapper {
-    max-width:100%;
-    padding:auto;
+    max-width:250px;
   }
   .weather-temperature .units {
     font-size:12px
