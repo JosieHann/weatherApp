@@ -110,8 +110,8 @@ li:first-letter {
   text-align: center;
   display: block;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
 .weather-app-wrapper {
-  max-width: 200px;}
+  max-width: 100%;}
 }
   
