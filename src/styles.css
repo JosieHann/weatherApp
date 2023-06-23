@@ -113,5 +113,6 @@ li:first-letter {
 @media only screen and (max-width: 400px) {
   .weather-app-wrapper {
   max-width: 300px;
-  margin: 10px auto;
+  }
 }
+
