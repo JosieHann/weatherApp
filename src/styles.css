@@ -112,6 +112,6 @@ li:first-letter {
 }
 @media(max-width:460px) {
   .weather-app-wrapper {
-    max-width:100%;
+    max-width:300px;
   } 
 }
