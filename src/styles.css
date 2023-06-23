@@ -110,3 +110,8 @@ li:first-letter {
   text-align: center;
   display: block;
 }
+@media(max-width:600px) {
+  .weather-app-wrapper {
+    max-width:400px;
+  }
+}
