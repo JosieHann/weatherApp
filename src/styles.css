@@ -119,8 +119,11 @@ li:first-letter {
     font-size: 20px;
   }
   .weather-forecast-temperatures {
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
+    font-size: 14px;
+  }
+  .col-2 {
+    justify-content: space-evenly;
+    padding-left: 0;
+    padding-right: 5px;
   }
 }
